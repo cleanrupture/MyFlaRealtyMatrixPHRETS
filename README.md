@@ -1,7 +1,7 @@
 MyFlaRealtyMatrixPHRETS
 =======================
 
-example PHP code to access My Florida Realty Matrix RETS using modified PHRETS code.
+example PHP code to access My Florida Regional MLS Matrix RETS using modified PHRETS code.
 
 #ISSUE#
 
