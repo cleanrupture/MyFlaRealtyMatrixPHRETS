@@ -24,7 +24,8 @@ class phRETS {
 	private $server_port;
 	private $server_protocol;
 	private $server_version;
-	private $server_software;
+	private $server_software
+	;
 	private $static_headers = array();
 	private $server_information = array();
 	private $cookie_file = "";
