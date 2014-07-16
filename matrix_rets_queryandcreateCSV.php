@@ -1,5 +1,3 @@
-
-
 <?php
 
 $rets_login_url = "http://rets.mfrmls.com/contact/rets/login";
@@ -55,7 +53,11 @@ foreach ($property_classes as $class) {
 
                 // run RETS search
                 echo "   + Query: {$query}  Limit: {$limit}  Offset: {$offset}<br>\n";
-                $search = $rets->SearchQuery("Property", $class, $query, array('Limit' => $limit, 'Offset' => $offset, 'Format' => 'COMPACT-DECODED', 'Count' => 1, "UsePost" => 1));
+                
+                // notice the inclusion of the UsePost element in the options array....this is what tell phrets to do a 
+                // POST not a GET...
+                $search = $rets->SearchQuery("Property", $class, $query, array('Limit' => $limit, 'Offset' => $offset, 
+                'Format' => 'COMPACT-DECODED', 'Count' => 1, "UsePost" => 1));
 
                 if ($rets->NumRows() > 0) {
 
