@@ -3,7 +3,7 @@ MyFlaRealtyMatrixPHRETS
 
 example PHP code to access My Florida Realty Matrix RETS using modified PHRETS code.
 
-#ISSUE
+#ISSUE#
 
 The relatively new Matrix RETS system created by My Florida Regional MLS require requires the use of POST and not GET.  Unfortunately, the popular PHRETS PHP class library for accessing RETS data doesn't allow POST requests, so a modified version is needed.
 
